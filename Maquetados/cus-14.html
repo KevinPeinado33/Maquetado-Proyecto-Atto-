@@ -6,19 +6,31 @@
 	<title>cus-14</title>
 	<!-- recursos -->
 	<link rel="stylesheet" href="recursos/css/materialize.min.css">  
-  <link rel="stylesheet" type="text/css" href="DataTable/DataTables-1.10.18/css/jquery.dataTables.min.css">
 	<!-- iconos -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
 	<div class="container centered">
-    <div class="col s12 m6">
+    <div class="col s12 m8">
       <div class="card">
         <div class="card-content">
           <span class="card-title">Estado De Pedidos</span>
+          <!--contenido arribita -->
+          <div class="row">
+            <div class="col s12 m4 l2"></div>
+            <div class="col s12 m4 l6"></div>
+            <div class="col s12 m4 l4">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">filter_tilt_shift</i>
+                <input id="last_name" type="text">
+                <label for="last_name">Ingrese un caracter</label>
+              </div>
+            </div>
+          </div>
+          <!-- fin arribita -->
           <!-- datable -->
-            <table id="example" class="display" style="width: 100%">
+            <table class="responsive-table centered">
               <thead>
                 <tr>
                   <th>#Pedido</th>
@@ -31,70 +43,50 @@
               <tbody>
                 <tr>
                   <td>N-01</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td>10/02/2018</td>
+                  <td>10/02/2018</td>
+                  <td><a class="waves-effect waves-light btn modal-trigger btn-floating blue accent-3" href="#modal1"><i class="material-icons">visibility</i></a></td>
+                  <td><a class="waver-effect" href="#">
+                    <i class="material-icons red-text">delete</i>
+                  </a></td>
                 </tr>
                 <tr>
                   <td>N-02</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td>10/02/2018</td>
+                  <td>10/02/2018</td>
+                  <td><a class="waves-effect waves-light btn modal-trigger btn-floating blue accent-3" href="#modal1"><i class="material-icons">visibility</i></a></td>
+                  <td><a class="waver-effect" href="#">
+                    <i class="material-icons red-text">delete</i>
+                  </a></td>
                 </tr>
                 <tr>
                   <td>N-03</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td>10/02/2018</td>
+                  <td>10/02/2018</td>
+                  <td><a class="waves-effect waves-light btn modal-trigger btn-floating blue accent-3" href="#modal1"><i class="material-icons">visibility</i></a></td>
+                  <td><a class="waver-effect" href="#">
+                    <i class="material-icons red-text">delete</i>
+                  </a></td>
                 </tr>
                 <tr>
                   <td>N-04</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td>10/02/2018</td>
+                  <td>10/02/2018</td>
+                  <td><a class="waves-effect waves-light btn modal-trigger btn-floating blue accent-3" href="#modal1"><i class="material-icons">visibility</i></a></td>
+                  <td><a class="waver-effect" href="#">
+                    <i class="material-icons red-text">delete</i>
+                  </a></td>
                 </tr>
                 <tr>
                   <td>N-05</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>N-06</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>N-07</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>N-08</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td>10/02/2018</td>
+                  <td>10/02/2018</td>
+                  <td><a class="waves-effect waves-light btn modal-trigger btn-floating blue accent-3" href="#modal1"><i class="material-icons">visibility</i></a></td>
+                  <td><a class="waver-effect" href="#">
+                    <i class="material-icons red-text">delete</i>
+                  </a></td>
                 </tr>
               </tbody>
-              <tfoot>
-                <tr>
-                  <th>#Pedido</th>
-                  <th>Fecha solicitada</th>
-                  <th>Fecha Respondida</th>
-                  <th>Detalle</th>
-                  <th>Accion</th>
-                </tr>
-              </tfoot>
             </table>
           <!-- fin de datatable -->
         </div>
@@ -106,12 +98,28 @@
 	</div>
   </div>
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>    
-  <script type="text/javascript" src="DataTable/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
-  <script type="text/javascript">
-          $(document).ready(function() {
-          $('#example').DataTable();
-      } );
+  <!-- modale 01 [Detalle de los pedidos]-->
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+  <!-- fin modale 01 [Detalle de los pedidos]-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="recursos/js/materialize.min.js"></script>
+
+  <script>
+      $(document).ready(function() {
+          $('.tooltipped').tooltip();
+          $('.modal').modal();
+          $('select').formSelect();
+      });
+      $('.dropdown-trigger').dropdown();
   </script>
 </body>
 </html>
