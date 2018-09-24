@@ -5,7 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>cus-14</title>
 	<!-- recursos -->
-	<link rel="stylesheet" href="recursos/css/materialize.min.css">
+	<link rel="stylesheet" href="recursos/css/materialize.min.css">  
+  <link rel="stylesheet" type="text/css" href="DataTable/DataTables-1.10.18/css/jquery.dataTables.min.css">
 	<!-- iconos -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -16,8 +17,86 @@
       <div class="card">
         <div class="card-content">
           <span class="card-title">Estado De Pedidos</span>
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <!-- datable -->
+            <table id="example" class="display" style="width: 100%">
+              <thead>
+                <tr>
+                  <th>#Pedido</th>
+                  <th>Fecha solicitada</th>
+                  <th>Fecha Respondida</th>
+                  <th>Detalle</th>
+                  <th>Accion</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>N-01</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>N-02</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>N-03</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>N-04</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>N-05</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>N-06</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>N-07</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>N-08</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>#Pedido</th>
+                  <th>Fecha solicitada</th>
+                  <th>Fecha Respondida</th>
+                  <th>Detalle</th>
+                  <th>Accion</th>
+                </tr>
+              </tfoot>
+            </table>
+          <!-- fin de datatable -->
         </div>
         <div class="card-action">
           <a href="#">This is a link</a>
@@ -26,5 +105,13 @@
     	</div>
 	</div>
   </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>    
+  <script type="text/javascript" src="DataTable/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript">
+          $(document).ready(function() {
+          $('#example').DataTable();
+      } );
+  </script>
 </body>
 </html>
