@@ -9,6 +9,20 @@
 	<!-- iconos -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <style type="text/css">
+    .tabs .tab a {
+        color: #2979ff;
+    }
+
+    .tabs .tab a:hover,
+    .tabs .tab a.active {
+        color: #2979ff;
+    }
+
+    .tabs .indicator {
+        background-color: #2979ff;
+    }
+  </style>
 </head>
 <body>
 	<div class="container centered">
@@ -18,14 +32,16 @@
       <div class="row">
         <div class="col s12">
             <ul class="tabs">
-              <li class="tab col s3"><a href="#test1">Pedidos Aceptados</a></li>
-              <li class="tab col s3"><a href="#test2">Pedidos Denegados</a></li>
-              <li class="tab col s3"><a href="#test3">Disabled Tab</a></li>
-              <li class="tab col s3"><a href="#test4">Test 4</a></li>
+              <li class="tab col s6">
+                <a href="#test1">Pedidos Aceptados</a>
+              </li>
+              <li class="tab col s6">
+                <a href="#test2">Pedidos Denegados</a>
+              </li>
             </ul>
         </div>
     <div id="test1" class="col s12">
-          <span class="card-title">Estado De Pedidos</span>
+      <!-- fin pedidos [aceptados] -->
           <!--contenido arribita -->
           <div class="row">
             <div class="col s12 m4 l2"></div>
@@ -34,14 +50,14 @@
               <div class="input-field col s12">
                 <i class="material-icons prefix">filter_tilt_shift</i>
                 <input id="last_name" type="text">
-                <label for="last_name">Ingrese un caracter</label>
+                <label for="last_name">Ingrese un datos de referencia</label>
               </div>
             </div>
           </div>
           <!-- fin arribita -->
           <!-- datable -->
             <table class="responsive-table centered">
-              <thead>
+              <thead class="white-text blue darken-3">
                 <tr>
                   <th>#Pedido</th>
                   <th>Fecha solicitada</th>
@@ -100,13 +116,91 @@
             </table>
           <!-- fin de datatable -->
         <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
+          <a class="waves-effect waves-light btn blue accent-3">Enviar Notificaciones <i class="material-icons right">near_me</i></a>
       	</div>
         </div>
-    <div id="test2" class="col s12">Test 2</div>
-    <div id="test3" class="col s12">Test 3</div>
-    <div id="test4" class="col s12">Test 4</div>
+        <!-- fin pedidos [aceptados] -->
+        <!-- pedidos [denegados] -->
+        <div id="test2" class="col s12">
+          <!--contenido arribita -->
+          <div class="row">
+            <div class="col s12 m4 l2"></div>
+            <div class="col s12 m4 l6"></div>
+            <div class="col s12 m4 l4">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">filter_tilt_shift</i>
+                <input id="last_name" type="text">
+                <label for="last_name">Ingrese un datos de referencia</label>
+              </div>
+            </div>
+          </div>
+          <!-- fin arribita -->
+          <!-- datable -->
+            <table class="responsive-table centered">
+              <thead class="white-text red darken-3">
+                <tr>
+                  <th>#Pedido</th>
+                  <th>Fecha solicitada</th>
+                  <th>Fecha Respondida</th>
+                  <th>Detalle</th>
+                  <th>Accion</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>N-01</td>
+                  <td>10/02/2018</td>
+                  <td>10/02/2018</td>
+                  <td><a class="waves-effect waves-light btn modal-trigger btn-floating blue accent-3" href="#modal1"><i class="material-icons">visibility</i></a></td>
+                  <td><a class="waver-effect" href="#">
+                    <i class="material-icons red-text">delete</i>
+                  </a></td>
+                </tr>
+                <tr>
+                  <td>N-02</td>
+                  <td>10/02/2018</td>
+                  <td>10/02/2018</td>
+                  <td><a class="waves-effect waves-light btn modal-trigger btn-floating blue accent-3" href="#modal1"><i class="material-icons">visibility</i></a></td>
+                  <td><a class="waver-effect" href="#">
+                    <i class="material-icons red-text">delete</i>
+                  </a></td>
+                </tr>
+                <tr>
+                  <td>N-03</td>
+                  <td>10/02/2018</td>
+                  <td>10/02/2018</td>
+                  <td><a class="waves-effect waves-light btn modal-trigger btn-floating blue accent-3" href="#modal1"><i class="material-icons">visibility</i></a></td>
+                  <td><a class="waver-effect" href="#">
+                    <i class="material-icons red-text">delete</i>
+                  </a></td>
+                </tr>
+                <tr>
+                  <td>N-04</td>
+                  <td>10/02/2018</td>
+                  <td>10/02/2018</td>
+                  <td><a class="waves-effect waves-light btn modal-trigger btn-floating blue accent-3" href="#modal1"><i class="material-icons">visibility</i></a></td>
+                  <td><a class="waver-effect" href="#">
+                    <i class="material-icons red-text">delete</i>
+                  </a></td>
+                </tr>
+                <tr>
+                  <td>N-05</td>
+                  <td>10/02/2018</td>
+                  <td>10/02/2018</td>
+                  <td><a class="waves-effect waves-light btn modal-trigger btn-floating blue accent-3" href="#modal1"><i class="material-icons">visibility</i></a></td>
+                  <td><a class="waver-effect" href="#">
+                    <i class="material-icons red-text">delete</i>
+                  </a></td>
+                </tr>
+              </tbody>
+            </table>
+          <!-- fin de datatable -->
+        <div class="card-action">
+          <a class="waves-effect waves-light btn red darken-3">Enviar Notificaciones <i class="material-icons right">near_me</i></a>
+        </div>
+        </div>
+        </div>
+        <!-- fin pedidos [denegados]-->
         </div>
     	</div>
 	</div>
@@ -116,11 +210,41 @@
   <!-- modale 01 [Detalle de los pedidos]-->
   <div id="modal1" class="modal bottom-sheet">
     <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
+      <h4><b>Pedido[Denegados-Aceptado] N-01</b></h4>
+      <p><b>Fecha [Solicitada]:</b> 10/02/2018 - <b>Fecha [Respuesta]:</b> 10/02/2018</p>
+      <p><b>Iglesia:</b> {Nombre de la iglesia}</p>
+      <p><b>Usuario Emitente:</b> {Nombre del Usuario que emitio la solicitud}</p><br>
+      <h5>Productos Solicitados</h5>
+      <table class="striped" style="max-width: 450px;">
+        <thead>
+          <tr>
+              <th>Name</th>
+              <th>Item Name</th>
+              <th>Item Price</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+          </tr>
+          <tr>
+            <td>Alan</td>
+            <td>Jellybean</td>
+            <td>$3.76</td>
+          </tr>
+          <tr>
+            <td>Jonathan</td>
+            <td>Lollipop</td>
+            <td>$7.00</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
     </div>
   </div>
   <!-- fin modale 01 [Detalle de los pedidos]-->
