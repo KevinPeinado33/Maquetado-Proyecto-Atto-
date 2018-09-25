@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="recursos/css/materialize.min.css">
+
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+</head>
+
+<style>
+	body {
+		font-family: 'Open Sans', sans-serif;
+		background-color: #FAFAFA;
+	}
+
+	table {
+		table-layout: fixed;
+		font-size: 13px;
+
+	}
+
+	.table-header {
+		height: 64px;
+		padding-left: 24px;
+		padding-right: 14px;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+		display: flex;
+		-webkit-display: flex;
+		border-bottom: solid 1px #DDDDDD;
+	}
+
+	.table-header .actions {
+		display: -webkit-flex;
+		margin-left: auto;
+	}
+
+	.table-header .btn-flat {
+		min-width: 36px;
+		padding: 0 8px;
+	}
+
+	.table-header input {
+		margin: 0;
+		height: auto;
+	}
+
+	.table-header i {
+		color: rgba(0, 0, 0, 0.54);
+		font-size: 24px;
+	}
+
+
+	.tabs .tab a {
+		color: #2979ff;
+	}
+
+	.tabs .tab a:hover,
+	.tabs .tab a.active {
+		color: #2979ff;
+	}
+
+	.tabs .indicator {
+		background-color: #2979ff;
+	}
+
+</style>
+
+<body>
+
+
+	<nav style="height: 80px;">
+		<div class="nav-wrapper white">
+			<a href="#" class="brand-logo">
+				<img src="images/logo.png" width="80" height="68" style="padding: 5px;padding-left: 20px;padding-top: 10px;" alt="">
+
+
+			</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+
+				<li>
+
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="row">
+
+
+		<div class="col s2 ">
+
+			<div class="row">
+				<div style="margin-top: 25px;margin-left: 30px;" class="center">
+					<a class="waves-effect waves-light btn-large" style="width: 150px;margin-right:70px;;background-color: #0178FF;-webkit-border-radius: 100px;-moz-border-radius: 100px;border-radius: 100px;"><i class="material-icons left white-text">email</i>Nuevo</a>
+				</div>
+			</div>
+			<style>
+				.tabss {
+					margin-top: 120px;
+					padding: 15px;
+					padding-right: 95px;
+					width: 90px;
+					color: gray;
+
+				}
+
+				.tabss:hover {
+					background-color: aliceblue;
+					border-radius: 0px 100px 100px 0px;
+				}
+
+				.tabss2 {
+					margin-top: 120px;
+					padding: 15px;
+					padding-right: 120px;
+					width: 90px;
+					color: gray;
+
+				}
+
+				.tabss2:hover {
+					background-color: aliceblue;
+					border-radius: 0px 100px 100px 0px;
+				}
+
+			</style>
+
+			<div class="row" style="padding-top: 20px;">
+				<div>
+
+					<a href="" class="tabss"><img src="images/lista.svg" width="20" height="20" alt="" style="margin-right: 13px;">Ver Pedidos</a>
+
+					<a href="" class="tabss2" style=""><img src="images/user.svg" style="margin-top: 20px;margin-right: 13px;" width="20" height="20" alt="" style="">Mi Perfil</a>
+
+				</div>
+
+			</div>
+
+
+		</div>
+
+
+
+		<div class="col s10">
+
+
+			<div style="padding-left: 50px; margin-top: 40px;">
+				<h5>Pedido
+					<div class="chip" style="font-size:px;">
+						Pendiente
+					</div>
+				</h5>
+			</div>
+
+			<div style="padding-left: 50px; margin-top: 40px;">
+
+				<div class="row">
+					<div>
+						<table>
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Item Name</th>
+									<th>Cantidad Productos</th>
+									<th>Item Price</th>
+								</tr>
+							</thead>
+
+							<tbody class="responsive-table">
+								<tr>
+									<td>Libro01</td>
+									<td>Lollipop</td>
+									<td>25</td>
+									<td>
+										<div class="col s12">
+											<div class="input-field inline">
+												<input id="costo" type="email">
+												<label>Ingresar Precio</label>
+											</div>
+
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>libro02</td>
+									<td>Lollipop</td>
+									<td>10</td>
+									<td>
+										<div class="col s12">
+											<div class="input-field inline">
+												<input id="costo" type="email">
+												<label>Ingresar Precio</label>
+											</div>
+
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>Libro03</td>
+									<td>Lollipop</td>
+									<td>90</td>
+									<td>
+										<div class="col s12">
+											<div class="input-field inline">
+												<input id="costo" type="email">
+												<label>Ingresar Precio</label>
+											</div>
+										</div>
+
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div style="padding-left: 50px; margin-top: 40px;">
+				<a href="Cotizacion.html" class="btn transparent  blue-text  waves-effect waves-blue">volver</a>
+				<a href="Cotizacion.html" onclick="alerta()" class="btn transparent  blue-text  waves-effect waves-blue">Guardar</a>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="recursos/js/materialize.min.js"></script>
+
+<script type="text/javascript">
+	function alerta(){
+		alert("Se guardó satisfactoriamente");
+	}
+	</script>
+
+</body>
+
+</html>
