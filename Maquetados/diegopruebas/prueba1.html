@@ -115,6 +115,16 @@ border: 0px solid #000000;
         background-color: #2979ff;
     }
       
+        
+        #nuevoo{
+            
+            
+            border-radius: 96px 96px 96px 96px;
+-moz-border-radius: 96px 96px 96px 96px;
+-webkit-border-radius: 96px 96px 96px 96px;
+border: 0px solid #000000;
+            
+        }
     </style>
 </head>
 
@@ -219,18 +229,25 @@ border: 0px solid #000000;
                         <div class="col s12 m12 l12">
                             <div class="container">
 
+                                <h5 style="font-weight:500;">Realizar Solicitud</h5>
+                                <p style="color: dimgray;font-size: 13px;margin-top: -3px;">Por favor complete todos los campos para realizar su solicitud</p>
+                                <div class="divider"></div>
 
 
+                                <div class="row" style="margin-top: 20px;">
 
-                                <div class="card" id="cartita" style="margin-top: 30px;">
-                                    <div class="table-header " style="background-color:#3498db;color: white;height: 50px;">
-                                        <span class="table-title"><i class="material-icons left white-text">assignment</i>Datos de Solicitud</span>
+                                    <div class="col s8">
 
-                                    </div>
+                                        <p style="color: #939DDE;font-weight: 550;">*Datos generales de Solicitud</p>
+
+                                    </div>                                  
+                                </div>
 
 
+                         
 
-                                    <div class="row" style="margin-top: 25px;margin-bottom: 20px;">
+
+                                    <div class="row" style="margin-top: 10px;margin-bottom: 20px;">
                                         <div class="container">
                                             <div class="input-field col s3"><input placeholder="Título" id="titulo" type="text" class="validate"><label for="titulo">Por favor ingrese el título de pedido</label></div>
                                             <div class="input-field col s7"><input placeholder="Descripción" id="descripcion" type="text" class="validate"><label for="descripcion">Por favor ingrese la descripcion de su pedido</label></div>
@@ -238,30 +255,32 @@ border: 0px solid #000000;
                                         </div>
                                     </div>
 
-                                </div>
 
 
 
+<div class="row">
+    <div class="col s2">
+         <p style="color: #939DDE;font-weight: 550;">*Productos Solicitados</p>
+    </div>
+    <div class="col s5">
+        
+          <a class="waves-effect btn modal-trigger" href="#modal1" style="font-size: 10px;margin-top: 10px;" id="nuevoo">Agregar</a>
+          
+    </div>
+    
+</div>
 
-
-                                <div class="card" id="cartita" style="margin-top: 30px;">
-                                    <div class="table-header " style="background-color:#3498db;color: white;height: 50px;">
-                                        <span class="table-title" style="font-weight:500;"><i class="material-icons left white-text"> local_mall </i>Productos Solicitados</span>
-
-
-
-                                        <div class="actions">
-
-                                            <a class="waves-effect btn-flat nopadding  modal-trigger" href="#modal1"><i class="large material-icons white-text">add_to_photos</i></a>
-
-                                        </div>
-
-                                        <!-- Modal Nuevo Pedido -->
+                                        
 
 
 
-                                    </div>
+                                     
 
+                                        
+
+                                 
+
+                           
 
 
 
@@ -289,13 +308,7 @@ border: 0px solid #000000;
                                                 <td>50</td>
                                                 <td><a class="btn-floating btn-tyni waves-effect waves-light red"><i class="material-icons">delete</i></a></td>
                                             </tr>
-                                            <tr>
-                                                <td>A-0001AQ</td>
-                                                <td>Uniforme</td>
-                                                <td>La fe de Jesus -2018</td>
-                                                <td>50</td>
-                                                <td><a class="btn-floating btn-tyni waves-effect waves-light red"><i class="material-icons">delete</i></a></td>
-                                            </tr>
+
 
                                         </tbody>
                                     </table>
@@ -317,14 +330,14 @@ border: 0px solid #000000;
 
 
                     </div>
-                </div>
+               
 
 
-                <div class="container" style="padding-right: 25px;">
+                <div class="container center" >
 
-                    <div style="float:right">
+                    <div style="">
 
-                        <a href="" class="btn large" style="float:right;">Finalizar</a>
+                        <a href="" class="btn large" style="">Finalizar</a>
 
                     </div>
                 </div>

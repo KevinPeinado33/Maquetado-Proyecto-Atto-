@@ -1,0 +1,1 @@
+var evento={list:function(){(userInfo.rolSelected===appDefaults.rols.MIPES_IG||appDefaults.rols.ANCIANO_IG)&&userInfo.iglesia.idIglesia}};$(document).ready(function(){evento.list()});

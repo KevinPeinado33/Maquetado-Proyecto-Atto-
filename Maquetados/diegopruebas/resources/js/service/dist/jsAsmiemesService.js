@@ -1,0 +1,1 @@
+asmiemesService={addArray:function(e,s){try{connector.post(url.asmiemes.addArray,JSON.stringify(e),function(e){null!=e?(successMessage({title:message.asmiemes.add.title,content:message.asmiemes.add.success}),s(e)):(s(e),errorMessage({title:message.asmiemes.add.title,content:message.asmiemes.add.error}))})}catch(e){console.log(e)}}};

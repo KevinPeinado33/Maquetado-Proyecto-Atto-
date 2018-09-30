@@ -1,0 +1,1 @@
+var asmiemgpService={addArray:function(e,s){try{connector.post(url.asmiemgp.addArray,JSON.stringify(e),function(e){null!=e?(successMessage({title:message.asmiemgp.add.title,content:message.asmiemgp.add.success}),s(e)):(s(e),errorMessage({title:message.asmiemgp.add.title,content:message.asmiemgp.add.error}))})}catch(e){console.log(e)}}};

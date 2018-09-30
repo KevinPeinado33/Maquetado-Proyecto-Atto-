@@ -1,0 +1,1 @@
+var asGrupoService={add:function(r,e){try{connector.post(url.asgrupo.add,JSON.stringify(r),function(r){null!=r?e(r):(e(r),errorMessage({title:message.asgrupo.add.title,content:message.asgrupo.add.error}))})}catch(r){console.log(r)}}};

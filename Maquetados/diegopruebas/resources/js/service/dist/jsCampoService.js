@@ -1,0 +1,1 @@
+var campoService={get:function(e,t){try{connector.post(url.campo.get,JSON.stringify(e),function(e){console.log(e),null!=e?t(e):errorMessage({title:message.campo.list.title,content:message.campo.list.empty})})}catch(e){console.error(e)}}};

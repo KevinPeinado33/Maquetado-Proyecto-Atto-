@@ -1,0 +1,1 @@
+var asEscuelaService={add:function(e,a){try{connector.post(url.asescuela.add,JSON.stringify(e),function(e){null!=e?a(e):(a(e),errorMessage({title:message.asescuela.add.title,content:message.asescuela.add.error}))})}catch(e){console.log(e)}}};
