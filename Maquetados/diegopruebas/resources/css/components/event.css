@@ -1,0 +1,65 @@
+.crm-event-container {
+  margin: .5rem 0 1rem 0;
+  background: white;
+  width: 100%;
+}
+.crm-event-title {
+  font-weight: bold;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+.crm-event-title .fixed-action-btn {
+  position: absolute;
+  right: 19px;
+  bottom: 15px;
+  z-index: 1;
+}
+.crm-event-image {
+  width: 100%;
+}
+.crm-event-image img {
+  width: 100%;
+  background-size: cover;
+}
+.crm-event-actions {
+  padding: 8px 16px 16px 8px;
+}
+.crm-event-actions .crm-event-action-button {
+  cursor: pointer;
+  margin: 8px;
+  border: 1px solid #212121;
+  color: black;
+  border-radius: 4px;
+  transition: background 0.4s ease-in-out;
+  height: 32px;
+  padding: 4px 8px 4px 8px;
+}
+.crm-event-actions .crm-event-action-button:hover {
+  background: #212121;
+  color: white!important;
+}
+.crm-event-actions .row {
+  margin-bottom: 0px;
+}
+.crm-event-date {
+  display: inline-block;
+  padding: 8px;
+  width: 84px;
+  text-align: center;
+  font-weight: bold;
+  vertical-align: top;
+}
+.crm-event-description {
+  display: inline-block;
+  padding: 8px 16px 16px 8px;
+  width: calc(100% - 96px);
+  text-align: justify;
+  line-height: 1.8;
+}
+.crm-event-time {
+  padding: 8px 16px 8px 16px;
+}
+.crm-event-time .row {
+  margin-bottom: 0px;
+}

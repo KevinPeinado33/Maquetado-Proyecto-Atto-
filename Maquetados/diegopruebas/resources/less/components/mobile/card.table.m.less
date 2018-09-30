@@ -1,0 +1,15 @@
+@import (less) "../../util/variables.less";
+.card-table{
+    tr{
+        &:active{
+            background: lighten(@color-grey, 35%);
+            cursor: pointer;
+            .card-table-content{
+                border: none;
+            }
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.dropify-wrapper {
+  border: none;
+  border-bottom: 1px solid #f7f7f7;
+  padding: 0px;
+}
+.dropify-wrapper.touch-fallback .dropify-clear {
+  font-size: 32px;
+  text-shadow: 0px 0px 8px #969696;
+  border: none;
+  color: white;
+}
+/*# sourceMappingURL=dropify.css.map */

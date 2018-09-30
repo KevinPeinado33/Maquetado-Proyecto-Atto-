@@ -1,0 +1,61 @@
+@import (less) "../util/variables.less";
+.fixed-footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.well{
+    border: 1px solid lighten(@color-grey,20%);
+    border-radius:@space-xs;
+    padding: @space-md @space-md;
+}
+
+.hidden{
+    display: none;
+}
+
+hr{
+    border: none;
+    border-top: 1px solid #eee;
+}
+
+.circle-24{
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+}
+.circle-32{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    line-height: 1.8;
+    font-size: 18px;
+    text-align: center;
+}
+.circle-48{
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+}
+
+select.browser-default{
+    height: 46px;
+    margin-bottom: 15px;
+}
+
+.input-field{
+    input{
+        margin-top: 7px;
+        &.datepicker{
+            margin-top: 0px;
+        }
+    }
+}
+
+.no-box-shadow{
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow:none;
+    -o-box-shadow:none;
+}

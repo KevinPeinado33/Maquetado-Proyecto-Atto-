@@ -1,0 +1,12 @@
+.dropdown-content li span,
+.dropdown-content li a {
+  font-size: 14px;
+  color: #424242;
+  padding: 10px 16px;
+}
+select option {
+  font-size: 14px;
+  color: #424242;
+  padding: 10px 16px;
+}
+/*# sourceMappingURL=dropdown.css.map */

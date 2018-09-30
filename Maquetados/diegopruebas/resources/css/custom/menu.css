@@ -1,0 +1,59 @@
+.card-panel{
+    width: 250px;
+    height: 350px;
+}
+.card-panel:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    position: relative;
+    z-index: 1;
+}
+.card-panel:not(:hover){
+    position: relative;
+    z-index: 0;
+}
+.c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c9,.c10{
+    color:#424242;
+}
+.c1:hover{
+    color: #4caf50;
+}
+.c2:hover{
+    color: #1e88e5;
+}
+.c3:hover{
+    color: #ff6f00;
+}
+.c4:hover{
+    color: #e53935;
+}
+.c5:hover{
+    color: #c0ca33;
+}
+.c6:hover{
+    color: #fdd835;
+}
+.c7:hover{
+    color: #ff5722;
+}
+.c8:hover{
+    color: #3949ab;
+}
+.c9:hover{
+    color: #795548;
+}
+.c10:hover{
+    color: #795548;
+}
+.contModulos{
+    margin-top: 5%;
+}
+@media only screen and (max-width: 600px) {
+    .card-panel{
+        width: 90%;
+    }
+}
+form p{
+    text-align: center;
+}

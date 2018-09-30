@@ -1,0 +1,11 @@
+.card-table tr:active {
+  background: #f7f7f7;
+  cursor: pointer;
+}
+.card-table tr:active .card-table-content {
+  border: none;
+}
+.card-table tr:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=card.table.m.css.map */

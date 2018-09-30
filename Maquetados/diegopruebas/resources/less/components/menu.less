@@ -1,0 +1,71 @@
+@import (less) "../util/variables.less";
+.crm-menu-title{
+    width: 100%;
+    vertical-align: middle;
+    font-weight: 500;
+    font-size: 18px;
+    padding: @space-sm @space-md;
+    text-align: center;
+}
+.crm-menu-subtitle{
+    font-size: 12px;
+    width: 100%;
+}
+.crm-menu-circle{
+    text-align: center;
+    margin-bottom: @space-md;
+    width:100%;
+    .crm-menu-item{
+        vertical-align: top;
+        cursor: pointer;
+        margin: @space-md;
+        text-align: center;
+        display:inline-block;
+        i.lg{
+            width: 128px;
+            height: 128px;
+            border-radius: 64px;
+            line-height: 1.6;
+            font-size: 64px;
+        }
+        i.md{
+            width: 64px;
+            height: 64px;
+            border-radius: 32px;
+            line-height: 1.9;
+            font-size: 32px;
+        }
+        i.sm{
+            width: 32px;
+            height: 32px;
+            border-radius: 16px;
+            line-height: 2;
+            font-size: 16px;
+        }
+        i{
+            text-align: center;
+            margin-bottom: 4px;
+        }
+        .title{
+            text-align: center;
+            font-size: 14px;
+            width: 96px;
+            line-height: 1.2;
+            color: black;
+        }
+
+    }
+
+}
+
+.crm-collection{
+    .crm-collection-item{
+        display: block;
+        padding: @space-sm 0px;
+        cursor: pointer;
+        &:hover, &.active{
+            font-weight: bold;
+        }
+        
+    }
+}

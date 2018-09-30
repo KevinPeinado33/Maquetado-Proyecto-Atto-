@@ -1,0 +1,37 @@
+.card-table {
+  width: 100%;
+}
+.card-table tr {
+  padding: 8px 4px;
+  background: white;
+}
+.card-table tr td.card-table-icon {
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 64px;
+}
+.card-table tr td.card-table-icon i {
+  text-align: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  line-height: 1.9;
+  font-size: 24px;
+}
+.card-table tr td.card-table-icon-lg {
+  width: 128px;
+}
+.card-table tr td.card-table-content {
+  padding-left: 8px;
+  padding-right: 8px;
+  border-bottom: 1px solid #f7f7f7;
+}
+.card-table tr td.card-table-content .card-table-title {
+  font-weight: 500;
+  font-size: medium;
+}
+.card-table tr td.card-table-content .card-table-subtitle {
+  color: #9E9E9E;
+  font-size: small;
+}
+/*# sourceMappingURL=card.table.css.map */

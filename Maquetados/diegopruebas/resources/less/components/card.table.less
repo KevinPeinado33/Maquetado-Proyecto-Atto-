@@ -1,0 +1,42 @@
+@import (less) "../util/variables.less";
+.card-table{
+    width:100%;
+    tr{
+        padding: 8px 4px;
+        background:white;
+        
+        td{
+            &.card-table-icon{
+                padding-left: 8px;
+                padding-right:8px;
+                width: 64px;
+                i{
+                    text-align: center;
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 24px;
+                    line-height: 1.9;
+                    font-size: 24px;
+                    
+                }
+            }
+            &.card-table-icon-lg{
+                width: 128px;
+            }
+
+            &.card-table-content{
+                padding-left: 8px;
+                padding-right:8px;
+                border-bottom:1px solid lighten(@color-grey,35%);
+                .card-table-title{
+                    font-weight: 500;
+                    font-size: medium;
+                }
+                .card-table-subtitle{
+                    color: @color-grey;
+                    font-size: small;
+                }
+            }
+        }
+    }
+}

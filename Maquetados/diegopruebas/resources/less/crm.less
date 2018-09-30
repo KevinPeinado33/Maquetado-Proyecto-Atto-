@@ -1,0 +1,65 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11/01/2018, 03:09:32 PM
+    Author     : Andres
+*/
+
+
+.crm-search-result{
+    &.collection{
+        border:none;
+        .collection-item{
+            line-height: 1.2rem;
+            border-bottom:1px solid lighten(@color-grey,35%);
+            &.avatar{
+                .circle{
+                    height: 48px;
+                    width: 48px;
+                    border: 2px solid white;
+                    .crm-box-shadow-1;
+                }
+            }
+            .title{
+                font-weight: 500;
+            }
+        }
+    }
+}
+@import "util/variables.less";
+@import "util/functions.less";
+
+@import "components/animations.less";
+@import "components/layout.less";
+@import "components/fonts.less";
+@import "components/modal.less";
+@import "components/datepicker.less";
+@import "components/dropify.less";
+@import "components/card.table.less";
+@import "components/menu.less";
+@import "components/pnotify.less";
+@import "components/select2.less";
+@import "components/tabs.less";
+@import "components/table.less";
+@import "components/dropdown.less";
+@import "components/event.less";
+@import "components/error.less";
+
+@media only screen and (max-width: @mobile-max-width) {
+    @import "components/mobile/layout.m.less";
+    @import "components/mobile/modal.m.less";
+    @import "components/mobile/card.table.m.less";
+    @import "components/mobile/menu.m.less";
+    @import "components/mobile/error.m.less";
+}
+@media only screen and (min-width: @tablet-min-width) and (max-width:@tablet-max-width) {
+    @import "components/tablet/modal.t.less";
+}
+@media only screen and (min-width: @desktop-min-width) {
+    @import "components/desktop/layout.d.less";
+    @import "components/desktop/modal.d.less";
+    @import "components/desktop/card.table.d.less";
+}

@@ -1,0 +1,14 @@
+.crm-pnotify .brighttheme {
+  background-color: #323232;
+  color: #fff;
+  border-radius: 5px;
+}
+.crm-pnotify .ui-pnotify-title {
+  font-size: 1.1rem;
+}
+.crm-pnotify .ui-pnotify-text {
+  font-size: 0.8rem;
+}
+.crm-pnotify .ui-pnotify-icon {
+  font-size: 3rem;
+}

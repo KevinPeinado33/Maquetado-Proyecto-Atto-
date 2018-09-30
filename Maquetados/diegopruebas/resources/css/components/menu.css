@@ -1,0 +1,66 @@
+.crm-menu-title {
+  width: 100%;
+  vertical-align: middle;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 8px 16px;
+  text-align: center;
+}
+.crm-menu-subtitle {
+  font-size: 12px;
+  width: 100%;
+}
+.crm-menu-circle {
+  text-align: center;
+  margin-bottom: 16px;
+  width: 100%;
+}
+.crm-menu-circle .crm-menu-item {
+  vertical-align: top;
+  cursor: pointer;
+  margin: 16px;
+  text-align: center;
+  display: inline-block;
+}
+.crm-menu-circle .crm-menu-item i.lg {
+  width: 128px;
+  height: 128px;
+  border-radius: 64px;
+  line-height: 1.6;
+  font-size: 64px;
+}
+.crm-menu-circle .crm-menu-item i.md {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  line-height: 1.9;
+  font-size: 32px;
+}
+.crm-menu-circle .crm-menu-item i.sm {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  line-height: 2;
+  font-size: 16px;
+}
+.crm-menu-circle .crm-menu-item i {
+  text-align: center;
+  margin-bottom: 4px;
+}
+.crm-menu-circle .crm-menu-item .title {
+  text-align: center;
+  font-size: 14px;
+  width: 96px;
+  line-height: 1.2;
+  color: black;
+}
+.crm-collection .crm-collection-item {
+  display: block;
+  padding: 8px 0px;
+  cursor: pointer;
+}
+.crm-collection .crm-collection-item:hover,
+.crm-collection .crm-collection-item.active {
+  font-weight: bold;
+}
+/*# sourceMappingURL=menu.css.map */

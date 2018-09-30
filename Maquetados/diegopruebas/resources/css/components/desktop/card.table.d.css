@@ -1,0 +1,8 @@
+.card-table tr:hover {
+  background: #f7f7f7;
+  cursor: pointer;
+}
+.card-table tr:hover .card-table-content {
+  border: none;
+}
+/*# sourceMappingURL=card.table.d.css.map */
